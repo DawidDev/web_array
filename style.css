@@ -39,6 +39,7 @@
   font-family: MotivaSans;
 }
 
+/* Globalne style dla głównych kontenerów */
 .container {
   max-width: 100%;
   width: 100%;
@@ -51,6 +52,8 @@
   max-width: 1110px;
 }
 
+/* **** HEADER - SEKCJA POWITALNA **** */
+/* Sekcja powitalna, głowa strony - wersja powyżej 768px */
 header {
   background: rgb(132, 73, 154);
   background: linear-gradient(
@@ -74,6 +77,7 @@ header .container .main_content {
   max-width: 1110px;
 }
 
+/* Sekcja powitalna, głowa strony - wersja poniżej 768px */
 .rwd-header {
   display: none;
 }
@@ -86,6 +90,7 @@ header .container .main_content {
   font-weight: 500;
 }
 
+/* Jumbotron w sekcji powitalnej strony */
 .container .jumbutron {
   height: 100%;
   width: 100%;
@@ -167,7 +172,7 @@ header .container .main_content {
   margin: 0;
 }
 
-/* Bootstrap carousel */
+/* Slider (Bootstrap carousel) */
 .carousel {
   height: 100%;
   max-height: 590px;
@@ -228,8 +233,7 @@ header .container .main_content {
   display: none;
 }
 
-/* SEKCJA Z IKONAMI PŁYWAJĄCYMI POD HEADEREM*/
-
+/* **** SECTION CLASS .icon-row - SEKCJA Z PŁYWAJĄCYMI IKONAMI **** */
 .icons-row {
   opacity: 0.5;
   height: auto;
@@ -237,7 +241,7 @@ header .container .main_content {
 
 .icons-row .container {
   overflow: hidden;
-margin-top: 20px;
+  margin-top: 20px;
 }
 
 .icons-row .container .main_content .row_icons {
@@ -272,8 +276,7 @@ margin-top: 20px;
   height: 45px;
 }
 
-/* SECTION INFORMATION ABOUT PRODUCTS */
-
+/* **** SECTION CLASS .information_products - SEKCJA Z INFORMACJAMI NA TEMAT PRODUKU **** */
 .information_products {
   margin-bottom: 20px;
   margin-top: 20px;
@@ -335,7 +338,7 @@ margin-top: 20px;
   color: #fff;
 }
 
-/* Elementy zawierające siatkę dodatkowych informacji  */
+/* Box zawierający siatkę dodatkowych informacji na temat produktu */
 .information_products .container .main_content .row .box_info {
   margin-top: 30px;
   font-size: 18px;
@@ -356,8 +359,7 @@ margin-top: 20px;
   margin-right: 10px;
 }
 
-/* Sekcja z telefonem, zachęta do kontaktu, zmiana telefonu na nowy */
-
+/* **** SECTION CLASS .incentive - SEKCJA Z NIEBIESKIM TELEFONEM, NIEBIESKIE TŁO **** */
 .incentive {
   margin-bottom: 30px;
 }
@@ -418,12 +420,12 @@ margin-top: 20px;
   color: #000000;
 }
 
+/* Przycisk pojawiający się w sekcji po skalowaniu do mniejszego rozmiaru */
 #rwd_incentive_btn {
   display: none;
 }
 
-/* Zestaw ikon w sekcji zachęcającej */
-
+/* **** SECTION CLASS .icon_box - SEKCJA Z PŁYWAJĄCYMI IKONAMI Z TYTUŁAMI **** */
 .incentive .container {
   padding-top: 20px;
   overflow: hidden;
@@ -470,6 +472,7 @@ margin-top: 20px;
   animation-play-state: running;
 }
 
+/* Wybór rodzaju animacji dla wierszy */
 .incentive .container .icon_box #left {
   animation-name: animLeft;
 }
@@ -507,6 +510,7 @@ margin-top: 20px;
   color: #fff;
 }
 
+/* Przycisk pojawiający się po skalowaniu do mniejszego rozmiaru */
 .incentive #incentive-btn-rwd {
   display: none;
   margin: 0 auto;
@@ -518,8 +522,7 @@ margin-top: 20px;
   color: #007ad8;
 }
 
-/* Sekcja z dostępnością produku */
-
+/* **** SECTION CLASS .available - SEKCJA Z OPISEM DOSTĘPNOŚCI PRODUKU **** */
 .available .main_content {
   padding: 0 30px;
 }
@@ -546,8 +549,7 @@ margin-top: 20px;
   color: #027ad7;
 }
 
-/* Sekcja constructions */
-
+/* **** SECTION CLASS .construction - SEKCJA Z INTELIGENTNYMI PRZYCISKAMI I TELEFONEM **** */
 .construction {
   margin-top: 140px;
   width: 100%;
@@ -667,8 +669,7 @@ margin-top: 20px;
   z-index: 1;
 }
 
-/* RWD Accordion */
-
+/* **** RWD ACCORDION in CLASS .construction - BLOK ZAWIERAJĄCY ROZWIJAJĄCĄ LISTĘ (Bootstrap)  **** */
 .construction .accordion {
   max-width: 700px;
   width: 90%;
@@ -712,8 +713,7 @@ margin-top: 20px;
   display: none;
 }
 
-/* Sekcja zielona - help us */
-
+/* **** SECTION CLASS .help_us - SEKCJA ZIELONA Z KARTAMI **** */
 .help_us .container .box_belp_us {
   height: 220px;
   background-color: #0a473d;
@@ -786,8 +786,7 @@ margin-top: 20px;
   padding: 7px 15px;
 }
 
-/* Sekcja zachęcająca nr 2 zielona  */
-
+/* **** SECTION CLASS .get_started - SEKCJA ZIELONA NR 2, ZACHĘTA DO KONTAKTU ZE SPECJALISTAMI **** */
 .get_started .container {
   background-color: #0a473d;
   color: #fff;
@@ -820,8 +819,7 @@ margin-top: 20px;
   display: none;
 }
 
-/* Stopka */
-
+/* **** FOOTER - STOPKA **** */
 footer {
   overflow: hidden;
 }
@@ -862,72 +860,48 @@ footer .container .main_content #rwd_footer_item {
 .incentive .icon_box .item:nth-child(1) img,
 .icons-row .container .main_content .row_icons .item:nth-child(1) img,
 .icons-row .container .main_content .row_icons .item:nth-child(9) img {
-    background-color: #037ad6;
-  }
-  
-  .incentive .icon_box .item:nth-child(2) img,
-  .icons-row .container .main_content .row_icons .item:nth-child(2) img,
-  .icons-row .container .main_content .row_icons .item:nth-child(10) img {
-    background-color: #28a745;
-  }
-  
-  .incentive .icon_box .item:nth-child(3) img,
-  .icons-row .container .main_content .row_icons .item:nth-child(3) img,
-  .icons-row .container .main_content .row_icons .item:nth-child(11) img {
-    background-color: #ffc106;
-  }
-  .incentive .icon_box .item:nth-child(4) img,
-  .icons-row .container .main_content .row_icons .item:nth-child(5) img,
-  .icons-row .container .main_content .row_icons .item:nth-child(12) img {
-    background-color: #dc3545;
-  }
-  .incentive .icon_box .item:nth-child(5) img,
-  .icons-row .container .main_content .row_icons .item:nth-child(6) img,
-  .icons-row .container .main_content .row_icons .item:nth-child(13) img {
-    background-color: #9a35cc;
-  }
-  .incentive .icon_box .item:nth-child(6) img,
-  .icons-row .container .main_content .row_icons .item:nth-child(7) img,
-  .icons-row .container .main_content .row_icons .item:nth-child(14) img {
-    background-color: #037ad6;
-  }
-  .incentive .icon_box .item:nth-child(7) img,
-  .icons-row .container .main_content .row_icons .item:nth-child(8) img,
-  .icons-row .container .main_content .row_icons .item:nth-child(15) img {
-    background-color: #dc3545;
-  }
+  background-color: #037ad6;
+}
 
-  /* Style kierowane do wszystkich elementów */
+.incentive .icon_box .item:nth-child(2) img,
+.icons-row .container .main_content .row_icons .item:nth-child(2) img,
+.icons-row .container .main_content .row_icons .item:nth-child(10) img {
+  background-color: #28a745;
+}
 
-  button:hover {
-      cursor: pointer;
-  }
+.incentive .icon_box .item:nth-child(3) img,
+.icons-row .container .main_content .row_icons .item:nth-child(3) img,
+.icons-row .container .main_content .row_icons .item:nth-child(11) img {
+  background-color: #ffc106;
+}
+.incentive .icon_box .item:nth-child(4) img,
+.icons-row .container .main_content .row_icons .item:nth-child(5) img,
+.icons-row .container .main_content .row_icons .item:nth-child(12) img {
+  background-color: #dc3545;
+}
+.incentive .icon_box .item:nth-child(5) img,
+.icons-row .container .main_content .row_icons .item:nth-child(6) img,
+.icons-row .container .main_content .row_icons .item:nth-child(13) img {
+  background-color: #9a35cc;
+}
+.incentive .icon_box .item:nth-child(6) img,
+.icons-row .container .main_content .row_icons .item:nth-child(7) img,
+.icons-row .container .main_content .row_icons .item:nth-child(14) img {
+  background-color: #037ad6;
+}
+.incentive .icon_box .item:nth-child(7) img,
+.icons-row .container .main_content .row_icons .item:nth-child(8) img,
+.icons-row .container .main_content .row_icons .item:nth-child(15) img {
+  background-color: #dc3545;
+}
 
+/* Style, efekty zdarzeńkierowane do wszystkich elementów */
 
+button:hover {
+  cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* RWD content */
+/* RWD - STYLE DEFINIOWANE DLA ROZDZIELCZOŚCI < 768px */
 
 @media only screen and (max-width: 768px) {
   .container {
@@ -999,9 +973,9 @@ footer .container .main_content #rwd_footer_item {
   .rwd-header #btn-2-rwd {
     border: 3px solid #000000;
   }
- 
+
   .icons-row {
-      display: none;
+    display: none;
   }
 
   .information_products
@@ -1054,7 +1028,6 @@ footer .container .main_content #rwd_footer_item {
   }
 
   /* Sekcja z animowanymi ikonami */
-
   .incentive .container .icon_box #left,
   .incentive .container .icon_box #right {
     width: 1050px;
@@ -1069,7 +1042,7 @@ footer .container .main_content #rwd_footer_item {
     height: auto;
   }
 
-  /* Sekcja z dostępnością produktu */
+/* **** SECTION CLASS .available - SEKCJA Z OPISEM DOSTĘPNOŚCI PRODUKU **** */
   .available .main_content .text_service {
     order: -1;
   }
@@ -1098,7 +1071,7 @@ footer .container .main_content #rwd_footer_item {
     border-top: 35px solid #0a473d;
   }
 
-  /* Sekcja zachęcająca nr 2 zielona  */
+/* **** SECTION CLASS .get_started - SEKCJA ZIELONA NR 2, ZACHĘTA DO KONTAKTU ZE SPECJALISTAMI **** */
 
   .get_started .container h6 {
     font-size: 30px;
@@ -1183,7 +1156,7 @@ footer .container .main_content #rwd_footer_item {
     padding-top: 0;
   }
 
-  /* Sekcja inteligenta zawierająca accordion*/
+ /* **** RWD ACCORDION in CLASS .construction - BLOK ZAWIERAJĄCY ROZWIJAJĄCĄ LISTĘ (Bootstrap)  **** */
 
   .construction {
     background-color: #f2f2f2;
@@ -1224,7 +1197,7 @@ footer .container .main_content #rwd_footer_item {
     color: #057cd8;
   }
 
-  /* Sekcja zielona - help us */
+/* **** SECTION CLASS .available - SEKCJA Z OPISEM DOSTĘPNOŚCI PRODUKU **** */
 
   .help_us .container .cards_list {
     padding-top: 20px;
@@ -1263,7 +1236,9 @@ footer .container .main_content #rwd_footer_item {
   }
 }
 
-/* Animacje definiujące zachowanie ikon w sekcji zachęcającej  */
+/* ANIMACJE */
+
+/* Animacje dla ikon w drugiej sekcji animowanej */
 @keyframes animLeft {
   0% {
     transform: translateX(-20%);
@@ -1288,6 +1263,7 @@ footer .container .main_content #rwd_footer_item {
   }
 }
 
+/* Animacje dla ikon w pierwszej sekcji animowanej */
 @keyframes animLeftSmall {
   0% {
     transform: translateX(-20%);
