@@ -235,7 +235,7 @@ header .container .main_content {
 
 /* **** SECTION CLASS .icon-row - SEKCJA Z PŁYWAJĄCYMI IKONAMI **** */
 .icons-row {
-  opacity: 0.5;
+  opacity: 0.2;
   height: auto;
 }
 
@@ -355,8 +355,7 @@ header .container .main_content {
 .information_products .container .main_content .row .box_info img {
   width: 30px;
   height: 30px;
-  float: left;
-  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 /* **** SECTION CLASS .incentive - SEKCJA Z NIEBIESKIM TELEFONEM, NIEBIESKIE TŁO **** */
@@ -394,7 +393,7 @@ header .container .main_content {
 
 .incentive .container .main_content .box_incentive h4 {
   font-size: 45px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   font-weight: 500;
 }
 
@@ -413,6 +412,7 @@ header .container .main_content {
   outline: none;
   border: none;
   background-color: transparent;
+  margin-top: 20px;
 }
 
 #btn-incentive-1 {
@@ -497,7 +497,7 @@ header .container .main_content {
 }
 
 .incentive #incentive-btn {
-  font-size: 18px;
+  font-size: 24px;
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -576,14 +576,15 @@ header .container .main_content {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .construction .row .box_buttons .inteligent_btn {
   text-align: center;
   width: 150px;
   height: 150px;
-  border: 2px solid #282828;
-  border-radius: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 40px;
   margin: 10px;
   padding-top: 10px;
   float: left;
@@ -630,6 +631,7 @@ header .container .main_content {
 .construction .row .box_txt_phone .phone {
   width: 75%;
   position: absolute;
+  z-index: -1;
 }
 .construction .row .box_txt_phone h6 {
   font-size: 30px;
@@ -714,6 +716,11 @@ header .container .main_content {
 }
 
 /* **** SECTION CLASS .help_us - SEKCJA ZIELONA Z KARTAMI **** */
+
+.help_us {
+  box-shadow: 0px -11px 11px -11px rgba(66, 68, 90, 1);
+  z-index: 2;
+}
 .help_us .container .box_belp_us {
   height: 220px;
   background-color: #0a473d;
@@ -1016,6 +1023,13 @@ button:hover {
     border: none;
   }
 
+  /* Box zawierający siatkę dodatkowych informacji na temat produktu */
+  .information_products .container .main_content .row .box_info img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
   .incentive #incentive-btn {
     display: none;
   }
@@ -1154,6 +1168,15 @@ button:hover {
   }
   .available .main_content .text_service {
     padding-top: 0;
+    text-align: center;
+  }
+
+  .available .main_content .img_service {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .available .main_content img {
+    max-width: 50%;
   }
 
  /* **** RWD ACCORDION in CLASS .construction - BLOK ZAWIERAJĄCY ROZWIJAJĄCĄ LISTĘ (Bootstrap)  **** */
