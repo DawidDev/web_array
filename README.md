@@ -1,4 +1,4 @@
-# Weather app
+# WebArray Landing Page
 
 **Demo: [live demo](https://dawiddev.github.io/web_array/)**
 
